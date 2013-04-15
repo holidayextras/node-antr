@@ -1,0 +1,13 @@
+{
+  "name": "jrun",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "0.2.7",
+    "require-all": "0.0.6"
+  },
+  "author": "Joe Warren <joe.warren@holidayextras.com>, Jack Cannon <jack.cannon@holidayextras.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:holidayextras/node-jrun.git"
+  }
+}
