@@ -1,11 +1,10 @@
 var antr = require('../');
 
-console.log(__dirname + '/dummyTests');
 var run = new antr({
-  dirname: __dirname + '/dummyTests',
-  filter: /(.+)\.js$/,
+  dirname: __dirname,
+  filter: /((test).+)\.js$/,
   batchSize: 1,
   timeout: 15
-}, function (stats) {
+}/*, function (stats) {
   console.log(stats);
-});
+}*/);
