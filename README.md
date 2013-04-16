@@ -1,4 +1,4 @@
-node-jrun
+node-antr
 =========
 
-Node Async Test Runner
+Asynchronous Node Test Runner
