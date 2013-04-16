@@ -5,6 +5,6 @@ var run = new antr({
   filter: /((test).+)\.js$/,
   batchSize: 1,
   timeout: 15
-}/*, function (stats) {
+}, function (stats) {
   console.log(stats);
-}*/);
+});
