@@ -2,7 +2,8 @@
   "name": "jrun",
   "version": "0.0.1",
   "dependencies": {
-    "async": "0.2.7"
+    "async": "0.2.7",
+    "sty": "0.6.1"
   },
   "author": "Joe Warren <joe.warren@holidayextras.com>, Jack Cannon <jack.cannon@holidayextras.com>",
   "repository": {
