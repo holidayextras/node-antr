@@ -13,9 +13,9 @@ We had the need for a runner which runs tests asynchronously.
 Just require the module and you're away!
 
 
-	var antr = require('antr');
+	var Antr = require('antr');
 
-	var run = new antr({
+	var run = new Antr({
   		dirname: __dirname,
   		filter: /test([^\/w]+?)\.js$/
 	});
