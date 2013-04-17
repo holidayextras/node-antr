@@ -1,21 +1,19 @@
-antr
-====
+#antr
 
 Asynchronous Node Test Runner
 
-### Why?
+##Why?
 We had the need for a runner which runs tests asynchronously.
 
-### Install
+##Install
 	npm install antr
 	
-### Usage
+##Usage
 Just require the module and you're away!
 
+	var antr = require('antr');
 
-	var Antr = require('antr');
-
-	var run = new Antr({
+	var run = new antr({
   		dirname: __dirname,
   		filter: /test([^\/w]+?)\.js$/
 	});
@@ -32,3 +30,10 @@ You can pass a callback in as the second parameter if you like, which will callb
 * **listFiles** Print out the array of files which will be run - defaults to `false`
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
+
+## npm Maintainers
+* [Joe Warren](http://www.github.com/joewarren)
+* [Jack Cannon](http://www.github.com/jackcannon)
+
+## License
+antr is licensed under the MIT license.
