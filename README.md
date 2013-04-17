@@ -11,23 +11,23 @@ We had the need for a runner which runs tests asynchronously.
 ##Usage
 Just require the module and you're away!
 
-  var Antr = require('antr');
-
-  var run = new Antr({
-      dirname: __dirname,
-      filter: /test([^\/w]+?)\.js$/
-  });
+	var Antr = require('antr');
+	
+	var run = new Antr({
+		dirname: __dirname,
+		filter: /test([^\/w]+?)\.js$/
+	});
 
 You can pass a callback in as the second parameter if you like, which will callback with err, stats. If you don't give antr a callback it will quit the process for you.
 
-  var Antr = require('antr');
+	var Antr = require('antr');
 
-  var run = new Antr({
-    dirname: __dirname,
-    filter: /test([^\/w]+?)\.js$/
-  }, function(err, stats){
-    console.log('Tests failed: ', stats.fails);
-  });
+	var run = new Antr({
+		dirname: __dirname,
+		filter: /test([^\/w]+?)\.js$/
+	}, function(err, stats){
+		console.log('Tests failed: ', stats.fails);
+	});
 
 ### Options
 
