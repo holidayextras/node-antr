@@ -19,7 +19,16 @@ Just require the module and you're away!
 	});
 
 You can pass a callback in as the second parameter if you like, which will callback with err, stats. If you don't give antr a callback it will quit the process for you.
-
+	
+	var Antr = require('antr');
+	
+	var run = new Antr({
+		dirname: __dirname,
+		filter: /test([^\/w]+?)\.js$/
+	}, function(err, stats){
+		console.log('Tests failed: ', stats.fails);
+	});
+	
 ### Options
 
 #### Required
