@@ -11,6 +11,9 @@
     "async": "0.2.7",
     "sty": "0.6.1"
   },
+  "devDependencies": {
+    "underscore": "1.4.4"
+  },
   "author": "Joe Warren <joe.warren@holidayextras.com>,Jack Cannon <jack.cannon@holidayextras.com>",
   "repository": {
     "type": "git",
