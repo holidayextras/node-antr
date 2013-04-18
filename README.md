@@ -28,8 +28,17 @@ You can pass a callback in as the second parameter if you like, which will callb
 		dirname: __dirname,
 		filter: /test([^\/w]+?)\.js$/
 	}, function(err, stats){
-		console.log('Tests failed: ', stats.fails);
+		console.log('Tests failed: ', stats.failed);
 	});
+
+####Stats contains
+* **passed**
+* **failed** 
+* **total**
+* **failRate** - percentage of failed tests
+* **failedTests** - array of files
+* **passedTests** - array of files
+* **timeTaken** - format hh:mm:ss
 
 ### Options
 
