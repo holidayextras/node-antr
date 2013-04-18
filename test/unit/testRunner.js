@@ -33,8 +33,8 @@ var assert = require('assert');
   })
 
   // Do the assertions!
-  assert.equal(runner._stats.passes, 1);
-  assert.equal(runner._stats.fails, 1);
+  assert.equal(runner._stats.passed, 1);
+  assert.equal(runner._stats.failed, 1);
   assert.equal(runner._stats.total,2);
   assert.equal(runner._stats.failRate, 50);
   assert.equal(runner._stats.timeTaken, 10);
