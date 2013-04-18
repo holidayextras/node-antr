@@ -11,7 +11,7 @@
     "async": "0.2.7",
     "sty": "0.6.1"
   },
-  "author": "Joe Warren <joe.warren@holidayextras.com>, Jack Cannon <jack.cannon@holidayextras.com>",
+  "author": "Joe Warren <joe.warren@holidayextras.com>,Jack Cannon <jack.cannon@holidayextras.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:holidayextras/node-antr.git"
