@@ -33,11 +33,11 @@ You can pass a callback in as the second parameter if you like, which will callb
 
 ####Stats contains
 * **passed**
-* **failed** 
+* **failed**
 * **total**
 * **failRate** - percentage of failed tests
-* **failedTests** - array of files
-* **passedTests** - array of files
+* **failedTests** - array of file paths
+* **passedTests** - array of file paths
 * **timeTaken** - format hh:mm:ss
 
 ### Options
