@@ -1,7 +1,11 @@
 {
   "name": "antr",
   "description": "Asynchronous Node Test Runner",
-  "keywords": ["test", "runner", "unit test"],
+  "keywords": [
+    "test",
+    "runner",
+    "unit test"
+  ],
   "version": "0.0.1",
   "dependencies": {
     "async": "0.2.7",
@@ -11,5 +15,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:holidayextras/node-antr.git"
+  },
+  "engines": {
+    "node": ">= 0.8.12"
   }
 }
