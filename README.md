@@ -2,6 +2,8 @@
 
 Asynchronous Node Test Runner
 
+[![Build Status](https://travis-ci.org/holidayextras/node-antr.png?branch=master)](https://travis-ci.org/holidayextras/node-antr)
+
 ##Why?
 We had the need for a runner which runs tests asynchronously.
 
