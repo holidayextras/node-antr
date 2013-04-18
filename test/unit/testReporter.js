@@ -13,5 +13,5 @@ var assert = require('assert');
   reporter._progress = 5;
 
   var progress = reporter.getProgress();
-  assert.equal('5/10 50.0%', progress)
+  assert.equal('5/10 50.0% [=========>----------]', progress)
 })();
