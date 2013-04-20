@@ -8,7 +8,7 @@ Asynchronous Node Test Runner
 We had the need for a runner which runs tests asynchronously.
 
 ##Install
-  npm install antr
+	npm install antr
   
 ##Usage
 Just require the module and you're away!
@@ -50,6 +50,7 @@ You can pass a callback in as the second parameter if you like, which will callb
 * **listFiles** Print out the array of files which will be run - defaults to `false`
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
+* **progressBar** Option to display a progress bar - defaults to `true`
 
 ## npm Maintainers
 * [Joe Warren](http://www.github.com/joewarren)
