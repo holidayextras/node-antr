@@ -45,7 +45,7 @@ You can pass a callback in as the second parameter if you like, which will callb
 #### Required
 * **filter** Regex to filter files to run
 
-##### Optional
+#### Optional
 * **dirname** Directory to find files in - defaults to `.`
 * **listFiles** Print out the array of files which will be run - defaults to `false`
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
