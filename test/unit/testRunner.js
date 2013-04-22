@@ -32,10 +32,20 @@ var assert = require('assert');
     assert.deepEqual(files, testFiles);
   })
 
+  runner._options.dirname = 'test/files'; // Change to using a non array of directories
+  // Test the file finder and filter is working properly
+  runner.getFiles(function(err, files){
+    var testFiles = [
+      'test/files/runMe.js'
+     ];
+    assert.deepEqual(files, testFiles);
+  })
+
   // Do the assertions!
   assert.equal(runner._stats.passed, 1);
   assert.equal(runner._stats.failed, 1);
   assert.equal(runner._stats.total,2);
   assert.equal(runner._stats.failRate, 50);
   assert.equal(runner._stats.timeTaken, 10);
+
 })();
