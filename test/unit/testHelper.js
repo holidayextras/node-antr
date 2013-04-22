@@ -12,5 +12,13 @@ var _ = require('underscore');
 
     var difference = _.difference(testFiles, files);
     assert.deepEqual(difference, []);
-  })
+  });
+
+})();
+
+(function(){
+  var dumStr = '1111111111';
+  var repStr = helper.strRepeat('1', 10);
+  assert.equal(dumStr, repStr);
+  assert.equal(repStr.length, 10);
 })();
