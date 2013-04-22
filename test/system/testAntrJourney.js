@@ -8,7 +8,7 @@ var run = new Antr({
   filter: /(dummy.+)\.js/,
   dirname: path,
   timeout: 5,
-  batchSize: 2
+  batchSize: 5
 }, function (err, stats) {
   assert.equal(2, stats.failed);
   assert.equal(3, stats.passed);
