@@ -46,7 +46,7 @@ You can pass a callback in as the second parameter if you like, which will callb
 * **filter** Regex to filter files to run
 
 #### Optional
-* **dirname** Directory to find files in - defaults to `.`
+* **dirname** Directory to find files in - defaults to `.` *This can be an array of directories*
 * **listFiles** Print out the array of files which will be run - defaults to `false`
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
