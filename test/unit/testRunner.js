@@ -3,7 +3,7 @@ var assert = require('assert');
 
 (function () {
   var runner = new Runner({
-    dirname: 'test/files',
+    dirname: ['test/unit', 'test/files'],
     filter: /run([^\/w]+?)\.js$/
   });
 
