@@ -6,9 +6,9 @@
     "runner",
     "unit test"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
-    "async": "0.2.7",
+    "async": "0.2.9",
     "sty": "0.6.1"
   },
   "devDependencies": {
