@@ -10,7 +10,6 @@ var run = new Antr({
   timeout: 5,
   batchSize: 6
 }, function (err, stats) {
-  console.log(err);
   assert.ok(err);
   assert.equal(err, 'ERROR: No files found.');
   // If we've made it this far we have passed our tests...
