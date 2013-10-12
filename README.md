@@ -51,6 +51,7 @@ You can pass a callback in as the second parameter if you like, which will callb
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
 * **progressBar** Option to display a progress bar - defaults to `true`
+* **succinct** Option to limit the amount of output on stdout/stderr `false`
 
 ## npm Maintainers
 * [Joe Warren](http://www.github.com/joewarren)
