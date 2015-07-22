@@ -18,7 +18,7 @@ var assert = require('assert');
   var data = {
     code: 1,
     item: 'testFail.js'
-  }
+  };
   runner.updateStats(data);
 
   // Test the updating of time taken works
@@ -30,7 +30,7 @@ var assert = require('assert');
       'test/files/runMe.js'
      ];
     assert.deepEqual(files, testFiles);
-  })
+  });
 
   runner._options.dirname = 'test/files'; // Change to using a non array of directories
   // Test the file finder and filter is working properly
@@ -39,7 +39,7 @@ var assert = require('assert');
       'test/files/runMe.js'
      ];
     assert.deepEqual(files, testFiles);
-  })
+  });
 
   // Do the assertions!
   assert.equal(runner._stats.passed, 1);
@@ -48,4 +48,28 @@ var assert = require('assert');
   assert.equal(runner._stats.failRate, 50);
   assert.equal(runner._stats.timeTaken, 10);
 
+})();
+
+(function() {
+  var runner = new Runner({
+    dirname: ['test/files', 'test/sorting'],
+    filter: /run([^\/w]+?)\.js$/,
+    sort: function(leftPath, rightPath) {
+      var leftFilename = leftPath.split('/').slice(-1)[0];
+      var rightFilename = rightPath.split('/').slice(-1)[0];
+      return (leftFilename > rightFilename) ? 1 : -1;
+    }
+  });
+
+  runner.getFiles(function(err, files){
+
+    var expectedPaths = [
+      'test/sorting/runAlpha.js',
+      'test/sorting/runBeta.js',
+      'test/files/runMe.js',
+      'test/sorting/runZeta.js'
+    ];
+
+    assert.deepEqual(files, expectedPaths);
+  });
 })();
