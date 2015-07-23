@@ -1,5 +1,6 @@
 var Runner = require('../../lib/Runner.js');
 var assert = require('assert');
+var sinon = require('sinon');
 
 (function () {
   var runner = new Runner({
@@ -54,12 +55,14 @@ var assert = require('assert');
   var runner = new Runner({
     dirname: ['test/files', 'test/sorting'],
     filter: /run([^\/w]+?)\.js$/,
+    listFiles: true,
     sort: function(leftPath, rightPath) {
       var leftFilename = leftPath.split('/').slice(-1)[0];
       var rightFilename = rightPath.split('/').slice(-1)[0];
       return (leftFilename > rightFilename) ? 1 : -1;
     }
   });
+  sinon.spy(console, 'log');
 
   runner.getFiles(function(err, files){
 
@@ -71,5 +74,7 @@ var assert = require('assert');
     ];
 
     assert.deepEqual(files, expectedPaths);
+    assert.ok(console.log.calledWith('Files going to be run: ', expectedPaths));
+    console.log.restore();
   });
 })();
