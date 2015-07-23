@@ -1,16 +1,19 @@
-#antr
+# antr
 
 Asynchronous Node Test Runner
 
 [![Build Status](https://travis-ci.org/holidayextras/node-antr.png?branch=master)](https://travis-ci.org/holidayextras/node-antr)
 
-##Why?
+## Why?
+
 We had the need for a runner which runs tests asynchronously.
 
-##Install
+## Install
+
 	npm install antr
   
-##Usage
+## Usage
+
 Just require the module and you're away!
 
 	var Antr = require('antr');
@@ -31,7 +34,8 @@ You can pass a callback in as the second parameter if you like, which will callb
 		console.log('Tests failed: ', stats.failed);
 	});
 
-####Stats contains
+#### Stats contains
+
 * **passed**
 * **failed**
 * **total**
@@ -43,19 +47,20 @@ You can pass a callback in as the second parameter if you like, which will callb
 ### Options
 
 #### Required
+
 * **filter** Regex to filter files to run
 
 #### Optional
+
 * **dirname** Directory to find files in - defaults to `.` *This can be an array of directories*
 * **listFiles** Print out the array of files which will be run - defaults to `false`
 * **timeout** A timeout, in seconds, for each test - defaults to `30`
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
 * **progressBar** Option to display a progress bar - defaults to `true`
 * **succinct** Option to limit the amount of output on stdout/stderr - defaults to `false`
+* **sort** Sort function (to behave like a `[].sort` compareFunction), in case you need to customise the order in which the discovered tests are run.
 
 ## npm Maintainers
+
 * [Joe Warren](http://www.github.com/joewarren)
 * [Jack Cannon](http://www.github.com/jackcannon)
-
-## License
-antr is licensed under the MIT license.
