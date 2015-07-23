@@ -52,10 +52,8 @@ You can pass a callback in as the second parameter if you like, which will callb
 * **batchSize** Maximum amount of concurrent tests to run - defaults to `8`
 * **progressBar** Option to display a progress bar - defaults to `true`
 * **succinct** Option to limit the amount of output on stdout/stderr - defaults to `false`
+* **sort** Sort function (to behave like a `[].sort` compareFunction), in case you need to customise the order in which the discovered tests are run.
 
 ## npm Maintainers
 * [Joe Warren](http://www.github.com/joewarren)
 * [Jack Cannon](http://www.github.com/jackcannon)
-
-## License
-antr is licensed under the MIT license.
